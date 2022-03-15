@@ -115,9 +115,7 @@ class MyGame extends engine.Scene {
         if (this.mVictor !== null) {
             msg += " Victor:" + this.mVictor;
             this.mTurnManager.end();
-        }
-
-        if (this.mStalemate) {
+        } else if (this.mStalemate) {
             msg += " Victor: stalemate";
             this.mTurnManager.end();
         }
